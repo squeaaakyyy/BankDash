@@ -1,0 +1,162 @@
+.setting {
+
+    border-radius: 25px;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 93.3vw;
+    @include mobile {
+        padding: 5.87vw 0 ;
+    }
+    @include desktop-xl {
+        padding: 6.67vw 0;
+    }
+
+
+    &__edit-profile {
+        width: 81.25vw;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        @include mobile {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__profile {
+        position: relative;
+        
+        @include mobile {
+            width: 170px;
+            height: 170px;            
+        }
+        @include desktop-xl {
+            width: 130px;
+            height: 130px;
+            margin-right: 3.82vw;
+            margin-left: 2.083vw;
+        }
+       
+    }
+    &__img {
+        border-radius: 100px;
+
+        @include mobile {
+            width: 170px;
+            height: 170px;
+        }
+        @include desktop-xl {
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: rgba(24, 20, 243, 1);
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    
+    }
+
+    &__input-fields {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    &__input-field {
+
+        display: flex;
+        flex-direction: column;
+
+        label {
+            @include desktop-xl {
+                font-size: 16px;
+                margin-bottom: 11px;
+            }
+        }
+
+        input {
+            border: none;
+            border: 1px solid rgba(223, 234, 242, 1);
+
+            @include mobile {
+                border-radius: 10px; 
+                font-size: 12px;
+                padding: 13px 15px;
+                color:rgba(113, 142, 191, 1);
+
+                width: 69.1vw;
+                
+                margin-bottom: 16px;
+
+                &:last-of-type {
+                    margin-bottom: 20px;
+                }
+            }
+            
+            @include desktop-xl {
+               border-radius: 15px; 
+               font-size: 15px;
+               padding: 16px 20px;
+               width: 29.03vw;
+
+               margin-bottom: 22px;
+
+            }
+        }
+    }
+
+    &__save-button {
+        position: relative;
+        border: none;
+        color: #fff;
+
+        background-color: $save-button-color;
+
+        @include desktop-xl {
+            width: 42px;
+            font-size: 18px;
+            padding: 14px 74px;
+            border-radius: 15px;
+            margin-left: 61.81vw;
+        }
+
+        @include mobile {
+            width: 35px;
+            font-size: 18px;
+            padding: 11px 125px;
+            border-radius: 9px;
+            margin: auto;
+        }
+    }
+
+}

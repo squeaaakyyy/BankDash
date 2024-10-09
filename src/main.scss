@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'globals';
+@import 'vars';
+@import 'header';
+@import 'setting';
+
+body {
+    font-family: 'Inter', sans-serif;
+
+    background-color: #f5f7fa;
+}
+main {
+    display: flex;
+    justify-content: center;
+}

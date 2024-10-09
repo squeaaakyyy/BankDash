@@ -1,0 +1,93 @@
+.header {
+    background-color: $background-block-color;
+
+    border-bottom: 1px solid rgba(230, 239, 245, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @include mobile {
+        height: 140px;
+
+        margin-bottom: 25px;
+    }
+    @include desktop-xl {
+        height: 100px;
+
+        margin-bottom: 31px;
+    }
+    
+    &__container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 93.3vw;
+
+        @include mobile {
+            height: 35px;
+        }
+
+        @include desktop-xl {
+            height: 60px;
+        }
+
+    }
+
+    &__title {
+        font-weight: 600;
+        color: $title-color;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        li:not(:last-of-type) {
+            @include mobile {
+                display: none;
+            }
+            @include desktop-xl {
+                display: block;
+                margin-right: 30px;
+            }
+        }
+        li:nth-of-type(3) {
+            @include desktop-xl {
+                display: block;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__input, &__button {
+        background-color: $background-button-color;
+        border: none;
+    }
+
+    &__input {
+        border-radius: 40px;
+        height: 20px;
+        padding: 16px 25px;
+        font-size: 15px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: rgba(139, 163, 203, 1);
+        }
+    }
+    &__button {
+        border-radius: 50px;
+        padding: 12px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    &__profile {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}

@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BankDash</title>
+
+    <link rel="stylesheet" href="src/main.css">
+
+    <link rel="stylesheet" href="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <aside></aside>
+    <header class="header">
+        <div class="header__container">
+            <h3 class="header__title">Setting</h3>
+
+            <ul class="header__buttons">
+                <li><input class="header__input" type="text" placeholder="Search for something"></li>
+                <li><button class="header__button"><img src="src/images/settings 1.svg" alt=""></button></li>
+                <li><button class="header__button"><img src="src/images/002-notification-1.svg" alt=""></button></li>
+                <li><img class="header__profile" src="src/images/pexels-christina-morillo-1181690 1@2x.png" alt=""></li>
+            </ul>
+
+        </div>
+        
+
+    </header>
+
+    <main>
+
+        <article class="setting">
+            <nav class="setting__edit-profile">
+                <div class="setting__profile">
+                    <img class="setting__img" src="src/images/pexels-christina-morillo-1181690 1@2x.png" alt="">
+                    <button class="setting__button"><img src="src/images/pencil-alt 1.svg" alt=""></button>
+                </div>
     
+                <ul class="setting__input-fields">
+    
+                    <li class="setting__input-field">
+                        <label for="">Your Name</label>
+                        <input type="text">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">User Name</label>
+                        <input type="text">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Email</label>
+                        <input type="email">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Password</label>
+                        <input type="password">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Date of Birth</label>
+                        <input type="date">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Present Address</label>
+                        <input type="text">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Permanent Address</label>
+                        <input type="text">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">City</label>
+                        <input type="text">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Postal Code</label>
+                        <input type="number">
+                    </li>
+    
+                    <li class="setting__input-field">
+                        <label for="">Country</label>
+                        <input type="text">
+                    </li>
+                </ul>
+
+                
+            </nav>
+            <button class="setting__save-button">Save</button>
+        </article>
+        
+    </main>
+
+
 </body>
 </html>
